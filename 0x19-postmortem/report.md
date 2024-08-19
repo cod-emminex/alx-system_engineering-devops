@@ -37,9 +37,10 @@ To resolve the issue, the infrastructure team reverted the load balancer configu
 
 To prevent similar issues in the future, we will implement the following measures:
 
-Conduct thorough testing of any changes to infrastructure components, including load balancers, before deploying them to production environments.
-Implement more granular monitoring and alerting for load balancer metrics, such as health check failures and session persistence errors.
-Establish a formal change management process that includes peer reviews and approvals for infrastructure changes.
-Schedule regular training sessions for the engineering team on best practices for configuring and managing load balancers and other critical infrastructure components.
-Develop and maintain comprehensive documentation on our infrastructure setup, including configurations and operational procedures, to facilitate quicker resolution of future incidents.
+1. Conduct thorough testing of any changes to infrastructure components, including load balancers, before deploying them to production environments.
+2. Implement more granular monitoring and alerting for load balancer metrics, such as health check failures and session persistence errors.
+4. Establish a formal change management process that includes peer reviews and approvals for infrastructure changes.
+5. Schedule regular training sessions for the engineering team on best practices for configuring and managing load balancers and other critical infrastructure components.
+6. Develop and maintain comprehensive documentation on our infrastructure setup, including configurations and operational procedures, to facilitate quicker resolution of future incidents.
+
 This incident highlighted the importance of meticulous planning and testing when making changes to our infrastructure. By implementing these corrective and preventative measures, we aim to enhance our system's resilience and minimize the impact of future outages on our users.
