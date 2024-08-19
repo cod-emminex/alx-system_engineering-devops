@@ -1,7 +1,4 @@
-<div align="center"> 
 ![Images](images.jpeg)
-</div>
-
 
 ## Issue Summary
 On August 15th, 2024, our company experienced a significant outage affecting our primary web application, which serves as a critical tool
