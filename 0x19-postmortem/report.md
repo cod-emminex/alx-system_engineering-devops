@@ -1,8 +1,9 @@
-![Images](images.jpeg )
+<div align="center">![Images](images.jpeg)
 
 
-Issue Summary
-On August 15th, 2024, our company experienced a significant outage affecting our primary web application, which serves as a critical tool for our clients' daily operations. The outage began at 2:30 PM UTC and lasted until 6:00 PM UTC, impacting approximately 60% of our active users. Users reported slow load times, frequent timeouts, and inability to access certain features, leading to a disruption in their workflow and productivity. The root cause was traced back to a misconfiguration in our load balancer settings following a routine maintenance update.
+##Issue Summary
+On August 15th, 2024, our company experienced a significant outage affecting our primary web application, which serves as a critical tool
+for our clients' daily operations. The outage began at 2:30 PM UTC and lasted until 6:00 PM UTC, impacting approximately 60% of our active users. Users reported slow load times, frequent timeouts, and inability to access certain features, leading to a disruption in their workflow and productivity. The root cause was traced back to a misconfiguration in our load balancer settings following a routine maintenance update.
 
 Timeline
 August 15th, 2024, 2:32 PM UTC - The issue was first detected through an automated monitoring alert indicating increased latency across our web application.
