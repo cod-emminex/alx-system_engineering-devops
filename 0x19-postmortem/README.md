@@ -1,4 +1,4 @@
-	[A picture](image.jpeg)
+	[A picture](images.jpeg)
 	
 	Here is my blog report, showing all the postmortem issues encountered in the project.
 
