@@ -1,4 +1,6 @@
-<div align="center"> ![Images](images.jpeg) </div>
+<div align="center"> 
+![Images](images.jpeg)
+</div>
 
 
 ## Issue Summary
