@@ -11,20 +11,30 @@ maintenance update.
 ### Timeline
 
 August 15th, 2024, 2:32 PM UTC - The issue was first detected through an automated monitoring alert indicating increased latency 
-across our web application.  August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the 
+across our web application.  
+
+August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the 
 database queries due to recent schema changes.
+
 August 15th, 2024, 3:15 PM UTC - Misleading path: Investigation shifted towards network congestion, considering the spike in traffic 
 during peak hours.
+
 August 15th, 2024, 3:30 PM UTC - Incident escalated to the infrastructure team upon realizing the scope of the issue extended beyond application-level concerns.
+
 August 15th, 2024, 4:00 PM UTC - Further investigation revealed the misconfiguration in the load balancer settings, specifically related to session persistence and health check intervals.
+
 August 15th, 2024, 5:45 PM UTC - The issue was resolved by reverting the load balancer configuration to its previous state and adjusting the health check intervals to better suit our application's needs.
+
 August 15th, 2024, 6:00 PM UTC - Full functionality restored, and a post-outage review initiated to prevent future occurrences.
-Root Cause and Resolution
+
+### Root Cause and Resolution
+
 The root cause of the outage was identified as a misconfiguration in the load balancer settings. Specifically, the health check intervals were set too aggressively, causing healthy instances to be marked as unhealthy and removed from the pool. Additionally, the session persistence mechanism was improperly configured, leading to inconsistent routing of user sessions. This combination resulted in increased latency and service disruptions for our users.
 
 To resolve the issue, the infrastructure team reverted the load balancer configuration to its last known good state. They then adjusted the health check intervals to a more conservative setting and corrected the session persistence settings to ensure consistent user experience across sessions.
 
-Corrective and Preventative Measures
+### Corrective and Preventative Measures
+
 To prevent similar issues in the future, we will implement the following measures:
 
 Conduct thorough testing of any changes to infrastructure components, including load balancers, before deploying them to production environments.
