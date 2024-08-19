@@ -11,9 +11,7 @@ maintenance update.
 ### Timeline
 
 August 15th, 2024, 2:32 PM UTC - The issue was first detected through an automated monitoring alert indicating increased latency 
-across our web application.
-
-August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the 
+across our web application.  August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the 
 database queries due to recent schema changes.
 August 15th, 2024, 3:15 PM UTC - Misleading path: Investigation shifted towards network congestion, considering the spike in traffic 
 during peak hours.
