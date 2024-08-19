@@ -1,16 +1,21 @@
 ![Images](images.jpeg)
 
 ## Issue Summary
+
 On August 15th, 2024, our company experienced a significant outage affecting our primary web application, which serves as a critical tool
 for our clients' daily operations. The outage began at 2:30 PM UTC and lasted until 6:00 PM UTC, impacting approximately 60% of our active 
 users. Users reported slow load times, frequent timeouts, and inability to access certain features, leading to a disruption in their
 workflow and productivity. The root cause was traced back to a misconfiguration in our load balancer settings following a routine 
 maintenance update.
 
-Timeline
-August 15th, 2024, 2:32 PM UTC - The issue was first detected through an automated monitoring alert indicating increased latency across our web application.
-August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the database queries due to recent schema changes.
-August 15th, 2024, 3:15 PM UTC - Misleading path: Investigation shifted towards network congestion, considering the spike in traffic during peak hours.
+### Timeline
+
+August 15th, 2024, 2:32 PM UTC - The issue was first detected through an automated monitoring alert indicating increased latency 
+across our web application.
+August 15th, 2024, 2:45 PM UTC - Initial investigation focused on the application layer, suspecting a potential bottleneck in the 
+database queries due to recent schema changes.
+August 15th, 2024, 3:15 PM UTC - Misleading path: Investigation shifted towards network congestion, considering the spike in traffic 
+during peak hours.
 August 15th, 2024, 3:30 PM UTC - Incident escalated to the infrastructure team upon realizing the scope of the issue extended beyond application-level concerns.
 August 15th, 2024, 4:00 PM UTC - Further investigation revealed the misconfiguration in the load balancer settings, specifically related to session persistence and health check intervals.
 August 15th, 2024, 5:45 PM UTC - The issue was resolved by reverting the load balancer configuration to its previous state and adjusting the health check intervals to better suit our application's needs.
