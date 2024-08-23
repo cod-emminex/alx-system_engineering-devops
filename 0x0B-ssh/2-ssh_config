@@ -1,0 +1,7 @@
+Host emminex
+	IdentityFile ~/.ssh/school
+	IdentifyFile ~/.ssh/id_rsa
+	PasswordAuthenticate no
+	Port 22
+	Hostname 100.26.218.227
+	User ubuntu
