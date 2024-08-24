@@ -1,4 +1,4 @@
-server {
+server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
@@ -8,6 +8,12 @@
 	server_name _;
 
 	location / {
+		proxy_pass http://localhost:5003/2-hbnb;
+	}
+
+	location /static/ {
+		# rewrite ^(/static/[^?]*)\?.*$ $1 last;
+		alias /home/ubuntu/AirBnB_clone_v4/web_dynamic/static/;
 		try_files $uri $uri/ =404;
 	}
 
